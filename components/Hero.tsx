@@ -221,15 +221,11 @@ export default function Hero() {
             >
               <div className="relative w-[550px] drop-shadow-2xl ml-5">
                 <img
-                  src="/mockups/move2getr-phone.png"
+                  src="/mockups/MOVE2GETR_1-Photoroom.png"
                   alt="Mockup MOVE2GETR"
-                  className="w-full h-auto rounded-[2.5rem]"
+                  className="w-[400px] h-auto rounded-[2.5rem]"
                 />
-                {/* Badge “Bientôt disponible” */}                
-              <div className="absolute top-8 right-8 bg-white rounded-2xl px-6 py-3 shadow-xl flex items-center gap-2">
-                <span className="text-xl">✨</span>
-                <span className="text-gray-700 font-semibold">Bientôt disponible</span>
-              </div>
+
               </div>
 
             </motion.div>

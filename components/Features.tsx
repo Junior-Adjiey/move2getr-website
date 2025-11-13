@@ -13,10 +13,10 @@ export default function Features() {
     {
       icon: <Compass className="w-16 h-16" />,
       title: "Mes démarches",
-      description: "Guides interactifs pour visa, OFII, CAF, banque, santé...",
+      description: "Guides interactifs pour visa, CAF, banque, santé...",
       details: "Fini les heures perdues sur Google. On t'explique TOUT, pas à pas.",
       stat: "75% des étudiants disent que c'est leur plus gros problème",
-      image: "/mockups/move2getr-phone.png",
+      image: "/mockups/MOVE2GETR_2-Photoroom.png",
       gradient: "from-orange-primary to-orange-light"
     },
     {
@@ -25,7 +25,7 @@ export default function Features() {
       description: "Publications, entraide, réactions.",
       details: "Pose tes questions, partage tes bons plans, aide les nouveaux.",
       stat: "Une vraie famille loin de chez toi.",
-      image: "/mockups//move2getr-phone.png",
+      image: "/mockups//MOVE2GETR_3-Photoroom.png",
       gradient: "from-blue-primary to-purple-500"
     },
     {
@@ -34,7 +34,7 @@ export default function Features() {
       description: "Profils, messages, liens étudiants.",
       details: "Crée ton profil, connecte avec d'autres étudiants de ta ville, trouve des colocataires, organise des sorties.",
       stat: "Parce qu'on est plus forts ensemble.",
-      image: "/mockups/move2getr-phone.png",
+      image: "/mockups/MOVE2GETR_4-Photoroom.png",
       gradient: "from-green-primary to-teal-500"
     }
   ];
