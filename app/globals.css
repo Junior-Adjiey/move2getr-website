@@ -1,26 +1,137 @@
-@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #FFFFFF;
+  color: #1F2937;
+  overflow-x: hidden;
 }
+
+/* Container responsive */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 53, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(255, 107, 53, 0.6); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Utilities */
+.shadow-3xl {
+  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+}
+
+.border-3 {
+  border-width: 3px;
+}
+
+/* Custom colors */
+.bg-orange-primary { background-color: #FF6B35; }
+.bg-orange-light { background-color: #FF8E53; }
+.bg-orange-lighter { background-color: #FFA07A; }
+.bg-blue-primary { background-color: #4A90E2; }
+.bg-green-primary { background-color: #10B981; }
+.bg-gray-dark { background-color: #1F2937; }
+.bg-gray-light { background-color: #F9FAFB; }
+
+.text-orange-primary { color: #FF6B35; }
+.text-orange-light { color: #FF8E53; }
+.text-blue-primary { color: #4A90E2; }
+.text-green-primary { color: #10B981; }
+.text-gray-dark { color: #1F2937; }
+.text-gray-medium { color: #6B7280; }
+
+.border-orange-primary { border-color: #FF6B35; }
+.border-blue-primary { border-color: #4A90E2; }
+.border-green-primary { border-color: #10B981; }
+
+.hover\:text-orange-primary:hover { color: #FF6B35; }
+
+/* Gradients */
+.from-orange-primary {
+  --tw-gradient-from: #FF6B35;
+  --tw-gradient-to: rgb(255 107 53 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-orange-light {
+  --tw-gradient-to: rgb(255 142 83 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #FF8E53, var(--tw-gradient-to);
+}
+
+.to-orange-light {
+  --tw-gradient-to: #FF8E53;
+}
+
+.to-orange-lighter {
+  --tw-gradient-to: #FFA07A;
+}
+
+.from-blue-primary {
+  --tw-gradient-from: #4A90E2;
+  --tw-gradient-to: rgb(74 144 226 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-green-primary {
+  --tw-gradient-from: #10B981;
+  --tw-gradient-to: rgb(16 185 129 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FF6B35, #FF8E53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
