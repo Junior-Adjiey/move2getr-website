@@ -188,7 +188,7 @@ export default function Contact() {
             <div className="bg-gradient-to-br from-orange-primary/5 to-blue-primary/5 rounded-3xl p-8 border border-orange-primary/10">
               <h3 className="text-2xl font-bold text-gray-dark mb-4">Email direct</h3>
               <a href="mailto:contact@move2getr.com" className="text-xl text-orange-primary font-semibold hover:underline">
-                contact@move2getr.com
+                move2getr@gmail.com
               </a>
             </div>
 
