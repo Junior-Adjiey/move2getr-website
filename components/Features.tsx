@@ -115,7 +115,7 @@ export default function Features() {
                 <div className="pt-4">
                   <div className="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-orange-primary">
                     <p className="text-lg text-gray-dark font-semibold">
-                      💡 {feature.stat}
+                      {feature.stat}
                     </p>
                   </div>
                 </div>
