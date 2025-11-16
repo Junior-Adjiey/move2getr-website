@@ -55,10 +55,10 @@ export default function Contact() {
   };
 
   const socials = [
-    { icon: <Instagram className="w-5 h-5" />, link: 'https://instagram.com/move2getr' },
+    { icon: <Instagram className="w-5 h-5" />, link: 'https://www.instagram.com/move2getr?igsh=NGtpZ2tzamExdmlr&utm_source=qr' },
     { icon: <Linkedin className="w-5 h-5" />, link: 'https://linkedin.com/company/move2getr' },
     { icon: <Facebook className="w-5 h-5" />, link: 'https://facebook.com/move2getr' },
-    { icon: <FaTiktok className="w-5 h-5" />, link: 'https://tiktok.com/@move2getr' },
+    { icon: <FaTiktok className="w-5 h-5" />, link: 'https://www.tiktok.com/@move2getr.app?_r=1&_t=ZN-91OL2y1V6cU' },
   ];
 
   return (
