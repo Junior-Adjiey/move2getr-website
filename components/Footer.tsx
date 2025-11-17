@@ -116,10 +116,10 @@ export default function Footer() {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm text-center md:text-left">
-              © {currentYear} Move2getr – Tous droits réservés
+              © {currentYear} MOVE2GETR – Tous droits réservés
             </p>
             <p className="text-gray-600 text-sm">
-              Fait avec ❤️ pour les étudiants africains
+              Fait avec amour pour les étudiants africains
             </p>
           </div>
         </div>
